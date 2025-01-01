@@ -1,0 +1,91 @@
+body {
+    background-color: #001219;
+}
+
+.text,
+#text {
+    font-family: "Notable", serif;
+    font-style: normal;
+    text-align: center;
+    color: #ee9b00;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+}
+
+.yourScore,
+.compScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ee9b00;
+}
+
+#humanScore,
+#computerScore {
+    font-size: 22px;
+}
+
+.button {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
+#rock,
+#paper,
+#scissor {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#paper {
+    background-image: url(paper.png);
+    background-size: contain;
+}
+
+#rock {
+    background-image: url(rock.png);
+    background-size: contain;
+}
+
+#scissor {
+    background-image: url(scissor.png);
+    background-size: contain;
+}
+
+#restart {
+    font-weight: 900;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 12px;
+    padding: 9px 13px;
+    border-radius: 13px;
+    background-color: #ee9b00;
+}
+
+.restart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+img {
+    margin-top: 20px;
+    height: 220px;
+}
