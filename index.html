@@ -22,6 +22,7 @@
     <button id="rock">Rock</button>
     <button id="paper">Paper</button>
     <button id="scissor">Scissor</button>
+    <button id="restart">Restart</button>
 
 
 
@@ -41,6 +42,8 @@
         scissor.addEventListener('click', () => {
             playRound("scissor");
         })
+
+
 
 
         const scoreHuman = document.querySelector('#humanScore');
@@ -127,6 +130,16 @@
             }
         }
 
+        const restart = document.querySelector('#restart');
+        restart.addEventListener('click', () => {
+            scoreComp.textContent = '0';
+            scoreHuman.textContent = '0';
+            text.textContent = '';
+
+            rock.disabled = false;
+            paper.disabled = false;
+            scissor.disabled = false;
+        })
 
 
     </script>
